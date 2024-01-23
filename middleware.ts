@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 const allowedOrigin =
   process.env.NODE_ENV === "production"
-    ? ["https://www.google.com"]
+    ? ["https://www.google.com", "http://localhost:3000/cors"]
     : ["http://localhost:3000", "https://www.google.com"];
 
 export async function middleware(req: Request) {
